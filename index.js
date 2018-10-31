@@ -20,8 +20,8 @@ const obaApi = new api({
 obaApi.get('search', {
   q: 'spakenburg',
   librarian: true,
-  refine: true
-}, 'author').then(response => {
+  refine: true,
+}, 'title').then(response => {
 
   // response ends up here
   console.log(response)
