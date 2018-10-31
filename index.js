@@ -1,25 +1,32 @@
-require('dotenv').config() // haalt de keys op
+require('dotenv').config()
 
+const api = require('./oba-api.js')
+const chalk = require('chalk');
+const express = require('express')
+const app = express()
+const port = 3000
 
-const axios = require('axios'); //import axios 
-var parseString = require('xml2js').parseString; // vertalen xml > json
+const obaApi = new api({
+  url: 'https://zoeken.oba.nl/api/v1/',
+  key: process.env.PUBLIC
+})
 
-const baseURL = 'https://zoeken.oba.nl/api/v1/';
-const query = 'search/?q=boek;'
-const end = 'refine=true';
+// Search for method, params and than optional where you wanna find something
+// returns first 20 items
+// obaApi.get(endpoint, params, filterKey)
+// possible endpoints: search (needs 'q' parameter) | details (needs a 'frabl' parameter) | availability (needs a 'frabl' parameter) | holdings/root | index/x (where x = facet type (like 'book' ))
+// possible parameters: q, librarian, refine, sort etc. check oba api documentation for all
+// possible filterKey: any higher order key in response object, like title returns only title objects instead of full data object
+obaApi.get('search', {
+  q: 'spakenburg',
+  librarian: true,
+  refine: true
+}, 'author').then(response => {
 
+  // response ends up here
+  console.log(response)
 
-
-axios.get('https://zoeken.oba.nl/api/v1/search/?q=boek&authorization=1e19898c87464e239192c8bfe422f280&facet=type(book)')
-  .then(function (response) {
-    // handle success
-    parseString(response.data, function (err, result) {
-        console.log(result);
-    });
-
-
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
+  // Make server with the response on the port
+  app.get('/', (req, res) => res.json(response))
+  app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
+})
