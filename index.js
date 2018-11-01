@@ -23,7 +23,7 @@ obaApi.get('search', {
   librarian: true,
   page: 1,
   pagesize: 20, //kan niet hoger, wel lager
-  q: 'boek',
+  q: 'vogel',
   refine: true,
 },'title').then(response => {
 

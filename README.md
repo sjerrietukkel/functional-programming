@@ -10,6 +10,9 @@ Totaal aantal dierenboeken: 2576
 * Vissen in dierenboeken: 92
 * Beren in dierenboeken: 61
 * Konijnen in dierenboeken: 56
+* Vogels in dierenboeke: 86
+* Mol in dierenboeken: 19
+* Muis in dierenboeken: 77
 
 #### Lengte Titel door de jaren heen.
 
