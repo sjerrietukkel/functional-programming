@@ -22,7 +22,7 @@ obaApi.get('search', {
   facet: "genre(dieren)",
   librarian: true,
   page: 1,
-  q: 'boek',
+  q: 'kat',
   refine: true,
 },'title').then(response => {
 
