@@ -30,3 +30,13 @@
 
 Gezocht met q='boek', dat levert 441.982 boeken op in de database.
 
+
+## Stappenplan
+
+* Met de api van oba verbinden ✅
+* Informatie onderzoeken, wat is interessant en wat is bruikbaar? ✅
+* Stel aan de hand hiervan meerdere onderzoeksvragen op. ✅
+* Stel deelvragen voor de meest interessante onderzoeksvraag op.
+* Maak een eigen datastore
+* Doorzoek deze op patronen
+* Visualiseer deze d.m.v. D3
