@@ -17,6 +17,7 @@ const obaApi = new api({
 // possible endpoints: search (needs 'q' parameter) | details (needs a 'frabl' parameter) | availability (needs a 'frabl' parameter) | holdings/root | index/x (where x = facet type (like 'book' ))
 // possible parameters: q, librarian, refine, sort etc. check oba api documentation for all
 // possible filterKey: any higher order key in response object, like title returns only title objects instead of full data object
+
 obaApi.get('search', {
   q: 'spakenburg',
   librarian: true,
@@ -30,3 +31,18 @@ obaApi.get('search', {
   app.get('/', (req, res) => res.json(response))
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 })
+
+// obaApi.get('details', {
+//   // 'frabl': '707202E67DF360A0',
+//   'lang': 'dut',
+//   'librarian': true,
+//   'refine': true,
+// }).then(response => {
+
+//   // response ends up here
+//   console.log(response)
+
+//   // Make server with the response on the port
+//   app.get('/', (req, res) => res.json(response))
+//   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
+// })
