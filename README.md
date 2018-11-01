@@ -2,15 +2,15 @@
 
 ## Onderzoeksvragen
 
-### Wat zijn de populairste dieren als personage in dierenboeken?
+#### Wat zijn de populairste dieren als personage in dierenboeken?
 
-### Lengte Titel door de jaren heen.
+#### Lengte Titel door de jaren heen.
 
-### Genre in relatie met organisatie of persoon.
+#### Genre in relatie met organisatie of persoon.
 
-### Populairste subjects per genre.
+#### Populairste subjects per genre.
 
-### Target Audience door de jaren heen. 
+#### Target Audience door de jaren heen. 
  
 
 ## Interessante variablen

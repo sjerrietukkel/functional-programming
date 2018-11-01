@@ -34,17 +34,4 @@ obaApi.get('search', {
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 })
 
-// var titles = 
-
-// obaApi.get('details', {
-//   frabl: '707202E67DF360A0',
-//   librarian: true,
-//   refine: true,
-// }).then(response => {
-//   // response ends up here
-//   console.log(response)
-
-//   // Make server with the response on the port
-//   app.get('/', (req, res) => res.json(response))
-//   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
-// })
+// combined facets -> facet: ["genre(dieren)", "language(dut)"]
