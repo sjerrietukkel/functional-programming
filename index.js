@@ -24,7 +24,7 @@ obaApi.get('search', {
   page: 1,
   q: 'kat',
   refine: true,
-},'title').then(response => {
+}).then(response => {
 
   // response ends up here
   console.log(response)

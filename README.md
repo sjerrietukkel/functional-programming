@@ -15,18 +15,18 @@
 
 ## Interessante variablen
 
-* Author
+* **Author**
 * Format
 * Publicatiejaar
 * Publishers
-* Titel
+* **Titel**
 * Plaats 
 * Organisatie of persoon
 * Target Audience 
 * Taal
-* Description
+* **Description**
 * Aantekeningen
-
+* **Genre**
 
 Gezocht met q='boek', dat levert 441.982 boeken op in de database.
 
