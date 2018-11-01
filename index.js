@@ -22,9 +22,10 @@ obaApi.get('search', {
   facet: ["genre(dieren)", "language(dut)"],
   librarian: true,
   page: 1,
+  pagesize: 20, //kan niet hoger, wel lager joe
   q: 'kat',
   refine: true,
-}).then(response => {
+},'title').then(response => {
 
   // response ends up here
   console.log(response)
