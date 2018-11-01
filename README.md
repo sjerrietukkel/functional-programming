@@ -5,11 +5,11 @@
 #### Wat zijn de populairste dieren als personage in dierenboeken?
 
 Totaal aantal dierenboeken: 2576 
-Katten in dierenboeken: 306
-Honden in dierenboeken: 437
-Vissen in dierenboeken: 92
-Beren in dierenboeken: 61
-Konijnen in dierenboeken: 56
+* Katten in dierenboeken: 306
+* Honden in dierenboeken: 437
+* Vissen in dierenboeken: 92
+* Beren in dierenboeken: 61
+* Konijnen in dierenboeken: 56
 
 #### Lengte Titel door de jaren heen.
 
