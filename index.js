@@ -23,9 +23,9 @@ obaApi.get('search', {
   librarian: true,
   page: 1,
   pagesize: 20, //kan niet hoger, wel lager
-  q: 'vogel',
+  q: 'aap',
   refine: true,
-},'title').then(response => {
+}).then(response => {
 
   // response ends up here
   console.log(response)
