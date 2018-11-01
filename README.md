@@ -13,7 +13,7 @@
 ### Target Audience door de jaren heen. 
  
 
-## Variable
+## Interessante variable
 
 * Author
 * Format
@@ -27,4 +27,6 @@
 * Description
 * Aantekeningen
 
+
+Gezocht met q='boek', dat levert 441.982 boeken op in de database.
 
