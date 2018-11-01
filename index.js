@@ -19,7 +19,7 @@ const obaApi = new api({
 // possible filterKey: any higher order key in response object, like title returns only title objects instead of full data object
 
 obaApi.get('search', {
-  facet: "genre(dieren)",
+  facet: ["genre(dieren)", "language(dut)"],
   librarian: true,
   page: 1,
   q: 'kat',
