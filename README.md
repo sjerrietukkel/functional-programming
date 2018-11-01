@@ -1,6 +1,6 @@
 # Functional-Programming
 
-## Onderszoeksvragen
+## Onderzoeksvragen
 
 ### Wat zijn de populairste dieren als personage in dierenboeken?
 
@@ -13,7 +13,7 @@
 ### Target Audience door de jaren heen. 
  
 
-## Interessante variable
+## Interessante variablen
 
 * Author
 * Format
@@ -33,7 +33,7 @@ Gezocht met q='boek', dat levert 441.982 boeken op in de database.
 
 ## Stappenplan
 
-* Met de api van oba verbinden ✅
+- [X] Met de api van oba verbinden ✅
 * Informatie onderzoeken, wat is interessant en wat is bruikbaar? ✅
 * Stel aan de hand hiervan meerdere onderzoeksvragen op. ✅
 * Stel deelvragen voor de meest interessante onderzoeksvraag op.
