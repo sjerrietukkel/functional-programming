@@ -19,8 +19,10 @@ const obaApi = new api({
 // possible filterKey: any higher order key in response object, like title returns only title objects instead of full data object
 
 obaApi.get('search', {
-  q: 'spakenburg',
+  facet: "language(dut)",
   librarian: true,
+  page:2,
+  q: 'Hans',
   refine: true,
 }, 'title').then(response => {
 
@@ -32,13 +34,13 @@ obaApi.get('search', {
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 })
 
-// obaApi.get('details', {
-//   // 'frabl': '707202E67DF360A0',
-//   'lang': 'dut',
-//   'librarian': true,
-//   'refine': true,
-// }).then(response => {
+// var titles = 
 
+// obaApi.get('details', {
+//   frabl: '707202E67DF360A0',
+//   librarian: true,
+//   refine: true,
+// }).then(response => {
 //   // response ends up here
 //   console.log(response)
 
