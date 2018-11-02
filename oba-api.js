@@ -30,7 +30,14 @@ module.exports = class api {
       })
       // Search querey
       .then (response => {
-        return keySearch ? jp.query(response, `$..${keySearch}`) : response
+        if (keySearch.includes(',')) {
+          // then give multiple results
+          const keys = keySearch.split(',').map(key => key.trim()); //thanks gissa!
+          const results = keys.map(key => jp.query(response, `$..${key}`))
+          console.log(results)
+        } else {
+          return keySearch ? jp.query(response, `$..${keySearch}`) : response
+        }
       })
       // Make object response
       .then(response => {

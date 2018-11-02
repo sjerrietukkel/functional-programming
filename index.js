@@ -25,7 +25,7 @@ obaApi.get('search', {
   pagesize: 20, //kan niet hoger, wel lager
   q: 'aap',
   refine: true,
-}).then(response => {
+}, 'id, title').then(response => {
 
   // response ends up here
   console.log(response)
