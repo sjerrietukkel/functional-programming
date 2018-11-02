@@ -2,27 +2,27 @@
 
 ## Index
 
-**[Onderzoeksvragen](##Onderzoeksvragen)**
-**[Variabele](##interessante-variabele)**
-**[Stappenplan](##Stappenplan)**
+**[Onderzoeksvragen](##Onderzoeksvragen)** <br>
+**[Variabele](##interessante-variabele)**<br>
+**[Stappenplan](##Stappenplan)**<br>
 
 ## Onderzoeksvragen
 
 ### Wat zijn de populairste dieren als personage in dierenboeken?
-
+<br>
 #### Zijn er per periode andere dieren populair?
-
+<br>
 #### Is er een verschil tussen dieren die in kinderboeken als personage worden gebruikt en die in andere boeken?
 
 #### Hoe vaak zit de naam van het dier in de titel verwerkt?
 Aantal dierenboeken: 2576.
 
 #### Lengte Titel door de jaren heen.
-
+<br>
 #### Genre in relatie met organisatie of persoon.
-
+<br>
 #### Populairste subjects per genre.
-
+<br>
 #### Target Audience door de jaren heen. 
  
 
