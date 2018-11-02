@@ -2,9 +2,9 @@
 
 ## Index
 
-**[Onderzoeksvragen](##Onderzoeksvragen)** <br>
-**[Variabele](##interessante-variabele)**<br>
-**[Stappenplan](##Stappenplan)**<br>
+**[Onderzoeksvragen](#Onderzoeksvragen)** <br>
+**[Variabele](#interessante-variabele)**<br>
+**[Stappenplan](#Stappenplan)**<br>
 
 ## Onderzoeksvragen
 
