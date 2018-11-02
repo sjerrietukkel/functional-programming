@@ -28,18 +28,18 @@ module.exports = class api {
         // XML to Json
         return convert.xmlDataToJSON(response.data)
       })
-      // Search querey
-      .then (response => {
-        if (keySearch.includes(',')) {
-          // then give multiple results
-          const keys = keySearch.split(',').map(key => key.trim()); //thanks gissa!
-          const results = keys.map(key => jp.query(response, `$..${key}`))
+      // Search query
+      // .then (response => {
+      //   if (keySearch.includes(',')) {
+      //     // then give multiple results
+      //     const keys = keySearch.split(',').map(key => key.trim()); //thanks gissa!
+      //     const results = keys.map(key => jp.query(response, `$..${key}`))
 
-          return results
-        } else {
-          return keySearch ? jp.query(response, `$..${keySearch}`) : response
-        }
-      })
+      //     return results
+      //   } else {
+      //     return keySearch ? jp.query(response, `$..${keySearch}`) : response
+      //   }
+      // })
       // Make object response
       .then(response => {
         return resolve({

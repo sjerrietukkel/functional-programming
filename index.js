@@ -21,15 +21,27 @@ const obaApi = new api({
 obaApi.get('search', {
   facet: "genre(dieren)",
   page: 1,
-  pagesize: 1, //kan niet hoger, wel lager
+  pagesize: 20, //kan niet hoger dan 20, wel lager
   q: 'aap'
-}, 'publication, title').then(response => {
-
+}).then(response => {
+  const data = response.data.aquabrowser.results[0].result
   // response ends up here
-  console.log(response)
+  console.log(response.data)
+
+
+// Laat in de arrays de geselecteerde objecten zien  
+  const results = data.map(book => {
+    return {
+      title: book.titles[0].title[0]['_'],
+      coverImage: book.coverimages[0].coverimage[0]['_']
+    }
+  })
+
+
+
 
   // Make server with the response on the port
-  app.get('/', (req, res) => res.json(response))
+  app.get('/', (req, res) => res.json(results))
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 })
 
