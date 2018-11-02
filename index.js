@@ -20,12 +20,10 @@ const obaApi = new api({
 
 obaApi.get('search', {
   facet: "genre(dieren)",
-  librarian: true,
   page: 1,
-  pagesize: 20, //kan niet hoger, wel lager
-  q: 'aap',
-  refine: true,
-}, 'id, title').then(response => {
+  pagesize: 1, //kan niet hoger, wel lager
+  q: 'aap'
+}, 'publication, title').then(response => {
 
   // response ends up here
   console.log(response)

@@ -1,5 +1,11 @@
 # Functional-Programming
 
+## Index
+
+[Onderzoeksvragen] (##Onderzoeksvragen)
+[Variabele] (##interessante-variabele)
+[Stappenplan] (##Stappenplan)
+
 ## Onderzoeksvragen
 
 ### Wat zijn de populairste dieren als personage in dierenboeken?

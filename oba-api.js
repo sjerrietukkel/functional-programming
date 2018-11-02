@@ -34,7 +34,8 @@ module.exports = class api {
           // then give multiple results
           const keys = keySearch.split(',').map(key => key.trim()); //thanks gissa!
           const results = keys.map(key => jp.query(response, `$..${key}`))
-          console.log(results)
+
+          return results
         } else {
           return keySearch ? jp.query(response, `$..${keySearch}`) : response
         }
