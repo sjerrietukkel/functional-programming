@@ -2,7 +2,8 @@
 
 ## Index
 
-[Onderzoeksvragen] Onderzoeksvragen
+**[Installation Instructions](#installation-instructions)**<br>
+**[Onderzoeksvragen](##Onderzoeksvragen)**
 [Variabele] (##interessante-variabele)
 [Stappenplan] (##Stappenplan)
 
