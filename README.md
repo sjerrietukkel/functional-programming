@@ -3,8 +3,11 @@
 ## Onderzoeksvragen
 
 ### Wat zijn de populairste dieren als personage in dierenboeken?
+
 #### Zijn er per periode andere dieren populair?
+
 #### Is er een verschil tussen dieren die in kinderboeken als personage worden gebruikt en die in andere boeken?
+
 #### Hoe vaak zit de naam van het dier in de titel verwerkt?
 Aantal dierenboeken: 2576.
 
@@ -67,6 +70,6 @@ Overgestapt naar de code van Dennis, deze proberen te begrijpen en kijken wat de
 Onderzoeksvragen opgesteld en verbeterd.
 
 ### Donderdag
-Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen over opgesteld.
+Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen over  opgesteld.
 
 ### Vrijdag
