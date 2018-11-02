@@ -93,3 +93,4 @@ Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hie
 
 ### Vrijdag
 * Meerde zoekresultaten toegevoegd (met Gijs).
+* Filter verbeterd
