@@ -25,11 +25,17 @@
 Aantal dierenboeken: 2576.
 
 #### Lengte Titel door de jaren heen.
+
 <br>
+
 #### Genre in relatie met organisatie of persoon.
+
 <br>
+
 #### Populairste subjects per genre.
+
 <br>
+
 #### Target Audience door de jaren heen. 
  
 
