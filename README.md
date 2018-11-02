@@ -73,3 +73,4 @@ Onderzoeksvragen opgesteld en verbeterd.
 Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen over  opgesteld.
 
 ### Vrijdag
+* Meerde zoekresultaten toegevoegd (met Gijs).
