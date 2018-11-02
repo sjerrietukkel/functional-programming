@@ -50,3 +50,22 @@ Gezocht met q='boek', dat levert 441.982 boeken op in de database.
 - [ ] Verzamel gegevens
 - [ ] Doorzoek deze op patronen
 - [ ] Visualiseer deze d.m.v. D3
+
+
+## Day by day
+
+### Maandag
+Verbonden met de oba-api. Daarna aan de slag gegaan met de code van Rijk
+
+### Dinsdag
+Verder gegaan met de code van Rijk, hoe werkt het en wat doet het?
+Github repository aangemaakt. 
+
+### Woensdag
+Overgestapt naar de code van Dennis, deze proberen te begrijpen en kijken wat de output was.
+Onderzoeksvragen opgesteld en verbeterd.
+
+### Donderdag
+Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen voor opgesteld.
+
+### Vrijdag
