@@ -67,6 +67,6 @@ Overgestapt naar de code van Dennis, deze proberen te begrijpen en kijken wat de
 Onderzoeksvragen opgesteld en verbeterd.
 
 ### Donderdag
-Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen voor opgesteld.
+Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen over opgesteld.
 
 ### Vrijdag
