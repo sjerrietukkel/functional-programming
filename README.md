@@ -2,7 +2,7 @@
 
 ## Index
 
-[Onderzoeksvragen] (##Onderzoeksvragen)
+[Onderzoeksvragen] Onderzoeksvragen
 [Variabele] (##interessante-variabele)
 [Stappenplan] (##Stappenplan)
 
