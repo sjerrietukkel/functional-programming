@@ -3,84 +3,64 @@
     "url": "https://zoeken.oba.nl/api/v1/search/?authorization=1e19898c87464e239192c8bfe422f280&facet=genre%28dieren%29&page=1&pagesize=20&q=aap",
     "data": [
       {
-        "title": "Aap / Michael Teitelbaum",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=339436816&isbn=9789055667772&lid=&aut=&ti=&size=70"
+        "title": "Aap / Michael Teitelbaum"
       },
       {
-        "title": "Aap / tekst van Eus Roovers",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=316718823&isbn=9789025110796&lid=&aut=&ti=&size=70"
+        "title": "Aap / tekst van Eus Roovers"
       },
       {
-        "title": "Aap! / [verhaal en tek.:] Frank Smulders",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=084768622&isbn=9789027620453&lid=&aut=&ti=&size=70"
+        "title": "Aap! / [verhaal en tek.:] Frank Smulders"
       },
       {
-        "title": "Aap / ill. door Luana Rinaldo",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=321869753&isbn=9789048301997&lid=&aut=&ti=&size=70"
+        "title": "Aap / ill. door Luana Rinaldo"
       },
       {
-        "title": "Aap / Erik Bindervoet",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=236466216&isbn=9789061696469&lid=&aut=&ti=&size=70"
+        "title": "Aap / Erik Bindervoet"
       },
       {
-        "title": "Dieren uit warme landen / tek. Rien Poortvliet ; [tekst Jean Wilson ; bew. uit het Amerikaans door J.A. Visser-Bakker]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=801906059&isbn=9789001669010&lid=&aut=&ti=&size=70"
+        "title": "Dieren uit warme landen / tek. Rien Poortvliet ; [tekst Jean Wilson ; bew. uit het Amerikaans door J.A. Visser-Bakker]"
       },
       {
-        "title": "Een aap in de klas / Jolanda Horsten",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=336140010&isbn=9789048709885&lid=&aut=&ti=&size=70"
+        "title": "Een aap in de klas / Jolanda Horsten"
       },
       {
-        "title": "Een aap met een rok / Carine Aerts",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=35121187X&isbn=9789044732825&lid=&aut=&ti=&size=70"
+        "title": "Een aap met een rok / Carine Aerts"
       },
       {
-        "title": "Kleine aap / [ill. Michelle Berg",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=318763214&isbn=9789025745080&lid=&aut=&ti=&size=70"
+        "title": "Kleine aap / [ill. Michelle Berg"
       },
       {
-        "title": "Het boek van aap / Maria van Eeden",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=304182613&isbn=9789027673695&lid=&aut=&ti=&size=70"
+        "title": "Het boek van aap / Maria van Eeden"
       },
       {
-        "title": "Voor Aap / Mark Janssen & Suzanne Diederen",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=413491455&isbn=9789000360802&lid=&aut=&ti=&size=70"
+        "title": "Voor Aap / Mark Janssen & Suzanne Diederen"
       },
       {
-        "title": "Een aap in huis? / [tekst en ill.:] Isabel van Duijne",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=252336178&isbn=9789043701952&lid=&aut=&ti=&size=70"
+        "title": "Een aap in huis? / [tekst en ill.:] Isabel van Duijne"
       },
       {
-        "title": "Ferdinand de aap / Astrid Walenta [tekst]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=334500303&isbn=9789461500083&lid=&aut=&ti=&size=70"
+        "title": "Ferdinand de aap / Astrid Walenta [tekst]"
       },
       {
-        "title": "Aap is een boef / door Isabel Versteeg",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=369511190&isbn=9789048717705&lid=&aut=&ti=&size=70"
+        "title": "Aap is een boef / door Isabel Versteeg"
       },
       {
-        "title": "Aap, kip, vis / tekst: Auteursgroep Zwijsen",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=380133326&isbn=9789048719099&lid=&aut=&ti=&size=70"
+        "title": "Aap, kip, vis / tekst: Auteursgroep Zwijsen"
       },
       {
-        "title": "Aap, noot, niets .... of het spook van de ontlezing in het basisonderwijs",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=146160916&isbn=9789068134780&lid=&aut=&ti=&size=70"
+        "title": "Aap, noot, niets .... of het spook van de ontlezing in het basisonderwijs"
       },
       {
-        "title": "Ik wil een aap! / Sanne de Bakker",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=386098360&isbn=9789048720019&lid=&aut=&ti=&size=70"
+        "title": "Ik wil een aap! / Sanne de Bakker"
       },
       {
-        "title": "Ik mis aap / tekeningen van Tineke Meirink",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=380133520&isbn=9789048719013&lid=&aut=&ti=&size=70"
+        "title": "Ik mis aap / tekeningen van Tineke Meirink"
       },
       {
-        "title": "Aap poot pies",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=383646707&isbn=&lid=&aut=&ti=&size=70"
+        "title": "Aap poot pies"
       },
       {
-        "title": "Het boek van aap / Rien Broere & Soetkine Aps",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=39849388X&isbn=9789462910577&lid=&aut=&ti=&size=70"
+        "title": "Het boek van aap / Rien Broere & Soetkine Aps"
       }
     ]
   }
