@@ -5,6 +5,7 @@ const queryToString = require('query-string').stringify
 const jp = require('jsonpath')
 const chalk = require('chalk')
 
+
 module.exports = class api {
   constructor(options) {
     this.url = options.url,

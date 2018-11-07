@@ -9,6 +9,7 @@
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "jsonpath": "^1.0.0",
+    "node-oba-api-wrapper": "github:maanlamp/node-oba-api-wrapper",
     "oba-api": "^1.0.0",
     "query-string": "^6.2.0",
     "xml-to-json-promise": "0.0.3",

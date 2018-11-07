@@ -6,6 +6,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 const fs = require('fs')
+const OBAWrapper = require("node-oba-api-wrapper")
+
+
+
 
 const obaApi = new api({
   url: 'https://zoeken.oba.nl/api/v1/',
@@ -48,7 +52,6 @@ obaApi.get('search', {
   // pushed in de array
   dataArray.push(total);
   return dataArray
-  
 })
 
 .then(response => {
