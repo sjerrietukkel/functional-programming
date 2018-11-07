@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const express = require('express')
 const app = express()
 const port = 3000
+const fs = require('fs')
 
 const obaApi = new api({
   url: 'https://zoeken.oba.nl/api/v1/',
@@ -26,23 +27,36 @@ obaApi.get('search', {
 }).then(response => {
   const data = response.data.aquabrowser.results[0].result
   // response ends up here
-  console.log(response.data)
-
-
-// Laat in de arrays de geselecteerde objecten zien  
+  console.log(response)
+  // lege array waar de opgehaalde data in gepush'd
+  let dataArray = [];
+// Laat van de arrays de geselecteerde objecten zien 
+  
   const results = data.map(book => {
     return {
       title: book.titles[0].title[0]['_'],
-      coverImage: book.coverimages[0].coverimage[0]['_']
+      coverImage: book.coverimages[0].coverimage[0]['_'],
+      // summary: book.summaries[0].summary[0]
     }
   })
 
+  let total = {
+    url: response.url, 
+    data: results
+  };
 
-
-
-  // Make server with the response on the port
-  app.get('/', (req, res) => res.json(results))
-  app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
+  // pushed in de array
+  dataArray.push(total);
+  return dataArray
+  
 })
 
+.then(response => {
+  // Make server with the response on the port
+  app.get('/', (req, res) => res.json(total))
+  app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
+
+  data = JSON.stringify(response, null, 2);
+  fs.writeFileSync('bookdata.json', data);
+})
 // combined facets -> facet: ["genre(dieren)", "language(dut)"]
