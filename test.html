@@ -8,30 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>   
-    <div class="chart"></div>
+    <h1>Animals in genre 'dieren'</h1>
+    <svg class="chart"></svg>
 <script src="https://d3js.org/d3.v5.min.js"></script>    
-<script>
-    var data = [4, 8, 15, 16, 23, 42];
-
-    var chart = d3.select(".chart"); // selecteert de chart
-    var bar = chart.selectAll("div"); // selecteert de bars (bestaan nog niet)
-
-    var barUpdate = bar.data(data);
-    var barEnter = barUpdate.enter().append("div");
-    barEnter.style("width", function(d) { return d * 10 + "px"; });
-    barEnter.text(function(d) { return d; });
-
-    var x = d3.scale.linear()
-    .domain([0, d3.max(data)])
-    .range([0, 420]);
-
-    d3.select(".chart")
-  .selectAll("div")
-    .data(data)
-  .enter().append("div")
-    .style("width", function(d) { return x(d) + "px"; })
-    .text(function(d) { return d; });
-    
-</script>
+<script src="d3.js"></script>
 </body>
 </html>
