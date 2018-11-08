@@ -21,9 +21,9 @@ const obaApi = new betterApi({
 
 obaApi.getAll('search', {
   facet: "genre(dieren)",
-  q: 'boek'
+  q: 'hamster'
 }, {
-  page: 1,
+  page: 2,
   pagesize: 20,
   maxpages: 3
 })
@@ -37,10 +37,10 @@ obaApi.getAll('search', {
   
   const results = data.map(book => {
     return {
-      title: book.titles[0].title[0]['_']
+      title: book.titles[0].title[0]['_'],
       // subject: book.subjects[0].topical-subject[0]
 
-      // coverImage: book.coverimages[0].coverimage[0]['_'],
+      coverImage: book.coverimages[0].coverimage[0]['_'],
       // summary: book.summaries[0].summary[0]
     }
   })
