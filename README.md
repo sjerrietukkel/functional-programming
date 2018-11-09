@@ -3,7 +3,8 @@
 ## Index
 
 **[Installation](#How-to-install)**<br>
-
+**[Research Questions](#Research-questions)**<br>
+**[Code](#code-used)**<br>
 **[Plan of Action](#plan-of-action)**<br>
 
 
