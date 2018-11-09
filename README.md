@@ -2,6 +2,7 @@
 
 ## Index
 
+**[Installation](#How-to-install)**<br>
 **[Onderzoeksvragen](#Onderzoeksvragen)** <br>
 **[Variabele](#interessante-variabele)**<br>
 **[Stappenplan](#Stappenplan)**<br>
