@@ -77,7 +77,7 @@ client.getAll('search',
         maxpages: 5
       })
 ```      
-Compressing the data
+Compressing the data and creating a .json file
 ```ruby
 
 .then(response => {
