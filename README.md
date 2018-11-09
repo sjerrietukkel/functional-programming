@@ -62,18 +62,19 @@ I think the titlelength with 'cats' will be longer for children's book, because 
 * title
 
 ### Code used
+
 ```
 client.getAll('search',
       {
-       q: 'title:bloed',
+       q: 'title:kat',
        librarian: true,
        refine: true,
-       facet:'type(book)&facet=language(dut)&facet=genre(thriller)'
+       facet:'type(book)&facet=genre(sprookjes)'
       },
       {
         page: 1,
         pagesize: 20,
-        maxpages: 4
+        maxpages: 5
       })
 ```      
  
@@ -93,3 +94,8 @@ client.getAll('search',
 
 ##### ❌ To-do 
 - [ ] Visualize with D3
+
+#### Credits
+* Dennis Wegereef
+* Daniel van de Velde
+* Gijs Laarman
