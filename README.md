@@ -29,6 +29,17 @@ Start up the nodeJS server:
 node index
 ```
 
+### Packages used
+* Axios
+* Chalk
+* Dotenv
+* Express
+* Jsonpath
+* Oba-api
+* Query-string
+* Xml-to-json-promise
+* Xml2js
+
 
 ## Onderzoeksvragen
 

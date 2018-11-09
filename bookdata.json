@@ -1,86 +1,66 @@
 [
   {
-    "url": "https://zoeken.oba.nl/api/v1/search/?authorization=1e19898c87464e239192c8bfe422f280&facet=genre(dieren)&q=hamster",
+    "url": "https://zoeken.oba.nl/api/v1/search/?authorization=1e19898c87464e239192c8bfe422f280&facet=genre(dieren)&q=kat",
     "data": [
       {
-        "title": "Neline en haar hamster / Rik Valkenburg ; met ill. van Tiny van Asselt",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=042396050&isbn=9789026645211&lid=&aut=&ti=&size=70"
+        "title": "De oudere kat / auteur: Brigitte Eilert-Overbeck ; foto's: Ulrike Schanz ; [vert. uit het Duits: InAksie, Akkie de Jong]"
       },
       {
-        "title": "De 17de zomer van Maurice Hamster / Laure Van den Broeck",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=318763990&isbn=9789044810844&lid=&aut=&ti=&size=70"
+        "title": "Mijn kat / Wolfgang Hensel ; [vert. uit het Duits: Studio Imago, Titia van Schaik ; ill. getekend door Christian Barthold ... et al.]"
       },
       {
-        "title": "Mijn hamster is een spion / Dave Lowe",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=362784183&isbn=9789048308163&lid=&aut=&ti=&size=70"
+        "title": "De gouden kat / Gabriel King ; [vert. uit het Engels: Erica Feberwee]"
       },
       {
-        "title": "Mijn hamster is een meesterbrein / Dave Lowe",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=355527189&isbn=9789048308149&lid=&aut=&ti=&size=70"
+        "title": "De gelaarsde kat / [tekst] Martine Letterie"
       },
       {
-        "title": "Hanna leert je zorgen voor je hamster / Anita Ganeri",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=374712018&isbn=9789461751775&lid=&aut=&ti=&size=70"
+        "title": "Wat de kat kan : wat de kat denkt, wat de kat voelt, waar de kat van houdt / Akif Pirinçci en Rolf Degen ; van comment. voorz. door Francis, de beroemde kat ; vert. [uit het Duits] door Tinke Davids"
       },
       {
-        "title": "Daantje hamster / Sándor Petofi ; illustraties Adam Würtz ; vertaald door Sylvia Bodnár en Edith Jakos",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=059116072&isbn=9789060970126&lid=&aut=&ti=&size=70"
+        "title": "Sprookjes van Moeder de Gans / Christine Doorman. IV"
       },
       {
-        "title": "Dora en de hamster / bewerkt door Édouard Dia",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=394160355&isbn=9789089418890&lid=&aut=&ti=&size=70"
+        "title": "Boris de Kat wil verhuizen! / Jan Fearnley ; [vert. uit het Engels: Wendela van 't Hof]"
       },
       {
-        "title": "Een hamster uit Hamsterdam / geschreven door Edith Bove Dyckerhoff ; getek. door Gertraud en Walter Reiner ; met muziek van Wolfram Röhring en Edith Bove Dyckerhoff ; Nederlandse bew. [uit het Duits] Gertie Evenhuis",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=851835511&isbn=&lid=&aut=&ti=&size=70"
+        "title": "De knorrige Kat / Britta Teckentrup"
       },
       {
-        "title": "Mijn hamster is een astronaut / Dave Lowe",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=356090612&isbn=9789048308156&lid=&aut=&ti=&size=70"
+        "title": "De slimme kat / Ayano Imai"
       },
       {
-        "title": "The great hamster massacre / Katie Davies",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=321834879&isbn=9781847385956&lid=&aut=&ti=&size=70"
+        "title": "Wat een kat is dat! / [tekst:] Liesbeth van der Jagt"
       },
       {
-        "title": "Freddy : een hamster leeft gevaarlijk / Dietlof Reiche ; [vert. uit het Duits Esther Ottens]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=263632784&isbn=9789062494514&lid=&aut=&ti=&size=70"
+        "title": "Krokodillentranen / Lian de Kat"
       },
       {
-        "title": "De never evers : liefde, chaos en een hamster / Tom Ellen & Lucy Ivison",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=404030866&isbn=9789020679441&lid=&aut=&ti=&size=70"
+        "title": "Julia / Otto de Kat"
       },
       {
-        "title": "De hamster : aanschaf, voeding, verzorging, huisvesting, voortplanting, gezondheid en nog veel meer / Redactie Over Dieren",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=298318733&isbn=9789058210074&lid=&aut=&ti=&size=70"
+        "title": "De kat van Kaat / Willy Vandersteen"
       },
       {
-        "title": "Het teken van de hamster / Hugo Claus ; met aquarellen en tekeningen van Jan Vanriet",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=800380983&isbn=9789062906734&lid=&aut=&ti=&size=70"
+        "title": "De inscheper / Otto de Kat"
       },
       {
-        "title": "Het teken van de hamster / Hugo Claus ; met aquarellen en tek. van Jan Vanriet",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=830416587&isbn=9789022308820&lid=&aut=&ti=&size=70"
+        "title": "De snoezige kat / [auteur: Her Chia-Fen ; fotogr.: Chang Yi-Wen ; ill.: Cheng Xue-Fang ; vert. uit het Engels: Ineke de Boer]"
       },
       {
-        "title": "In het hol van de hamster / Heiderose en Andreas Fischer-Nagel ; [vert. uit het Duits door J. Klerkx]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=85016625X&isbn=9789029098649&lid=&aut=&ti=&size=70"
+        "title": "Freetown / Otto de Kat"
       },
       {
-        "title": "Beter golf leren spelen / Robert Hamster ; [vert. uit het Duits: Marjolijn Pepers]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=265566347&isbn=9789044703801&lid=&aut=&ti=&size=70"
+        "title": "Kat & muis / Ian Rankin"
       },
       {
-        "title": "De hamster : voeding, verzorging, aanschaf, huisvesting, voortplanting, gezondheid en nog veel meer / Redactie Over Dieren ; [foto's: Dick Hamer ... et al.]",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=213764105&isbn=9789058210074&lid=&aut=&ti=&size=70"
+        "title": "De kat : de mysterieuze schoonheid van de kat; over aanschaf, opvoeding en verzorging en raskatten / [tekst:] Esther J.J. Verhoef-Verhallen"
       },
       {
-        "title": "Time travelling with a hamster / Ross Welford",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=401398706&isbn=9780008156312&lid=&aut=&ti=&size=70"
+        "title": "Bericht uit Berlijn / Otto de Kat"
       },
       {
-        "title": "El hámster y el gángster / Karlos Santisteban",
-        "coverImage": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=297609432&isbn=9788423677047&lid=&aut=&ti=&size=70"
+        "title": "De gevleugelde kat / Isabel Hoving"
       }
     ]
   }

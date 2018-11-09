@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-const api = require('./oba-api.js')
 const betterApi = require('./oba-api-better.js')
 const chalk = require('chalk')
 const express = require('express')
@@ -18,10 +17,10 @@ const obaApi = new betterApi({
 // possible endpoints: search (needs 'q' parameter) | details (needs a 'frabl' parameter) | availability (needs a 'frabl' parameter) | holdings/root | index/x (where x = facet type (like 'book' ))
 // possible parameters: q, librarian, refine, sort etc. check oba api documentation for all
 // possible filterKey: any higher order key in response object, like title returns only title objects instead of full data object
-
+ 
 obaApi.getAll('search', {
   facet: "genre(dieren)",
-  q: 'hamster'
+  q: 'kat'
 }, {
   page: 2,
   pagesize: 20,
@@ -40,8 +39,8 @@ obaApi.getAll('search', {
       title: book.titles[0].title[0]['_'],
       // subject: book.subjects[0].topical-subject[0]
 
-      // coverImage: book.coverimages[0].coverimage[0]['_'],
-      // summary: book.summaries[0].summary[0]
+      coverImage: book.coverimages[0].coverimage[0]['_'],
+      summary: book.summaries[0].summary[0]
     }
   })
 
@@ -61,8 +60,8 @@ obaApi.getAll('search', {
   app.get('/', (req, res) => res.json(response))
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 
-  // data = JSON.stringify(response, null, 2);
-  // fs.writeFileSync('bookdata.json', data);
+  data = JSON.stringify(response, null, 2);
+  fs.writeFileSync('bookdata.json', data);
 })
 .catch(err => console.log(err))
 // combined facets -> facet: ["genre(dieren)", "language(dut)"]
