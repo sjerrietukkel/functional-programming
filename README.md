@@ -3,12 +3,11 @@
 ## Index
 
 **[Installation](#How-to-install)**<br>
-**[Onderzoeksvragen](#Onderzoeksvragen)** <br>
-**[Variabele](#interessante-variabele)**<br>
-**[Stappenplan](#Stappenplan)**<br>
+
+**[Plan of Action](#plan-of-action)**<br>
 
 
-## How to install
+### How to install
 
 Request a key from OBA
 
@@ -29,7 +28,7 @@ Start up the nodeJS server:
 node index
 ```
 
-### Packages used
+#### Packages used
 * Axios
 * Chalk
 * Dotenv
@@ -40,92 +39,48 @@ node index
 * Xml-to-json-promise
 * Xml2js
 
+#### Oba API
+Understanding the API was difficult especially since the documentation was outdated and was very vague Daniel van de Velde helped me alot with the documentation he wrote. 
 
-## Onderzoeksvragen
+### Research Questions
 
-### Wat zijn de populairste dieren als personage in dierenboeken?
-
+##### Is the length of book with cats as subject longer for children's books, nature books or fairytales?
 <br>
-
-#### Zijn er per periode andere dieren populair?
-
+##### What are the most populair animals children's literature?
 <br>
-
-#### Is er een verschil tussen dieren die in kinderboeken als personage worden gebruikt en die in andere boeken?
-
-#### Hoe vaak zit de naam van het dier in de titel verwerkt?
-
+##### What animal is populair in what era?
 <br>
-
-Aantal dierenboeken: 2576.
-
-#### Lengte Titel door de jaren heen.
-
+##### Is there a difference in the animals used in books for different ages?
 <br>
-
-#### Genre in relatie met organisatie of persoon.
-
+##### How many times is the name of the animal used in the title?
 <br>
+##### Length of the titles in different times.
 
-#### Populairste subjects per genre.
 
-<br>
+### Hypotheses
+I think the titlelength with 'cats' will be longer for children's book, because they tend to give an impression of the book with a combination of the title and coverimage that has to speak to the imagination of a child.
 
-#### Target Audience door de jaren heen. 
+#### Parameters needed
+
+* genre
+* format 
+* title
+
+
  
 
-## Interessante variabele
 
-* **Author**
-* **Genre**
-* **Description**
-* **Titel**
-* Format
-* Publicatiejaar
-* Publishers
-* Plaats 
-* Organisatie of persoon
-* Target Audience 
-* Taal
-* Aantekeningen
-
-
-Gezocht met q='boek', dat levert 441.982 boeken op in de database.
-
-
-## Stappenplan
+### Plan of Action
 
 ##### ✅ Done
 
-- [x] Met de api van oba verbinden 
-- [x] Informatie onderzoeken, wat is interessant en wat is bruikbaar? 
-- [x] Stel aan de hand hiervan meerdere onderzoeksvragen op.
-- [x] Stel deelvragen voor de meest interessante onderzoeksvraag op.
+- [x] Connect with the API
+- [x] Search throught the data and select interesting variables
+- [x] Define research questions.
+- [x] Create sub-questions
+- [x] Think about visualisation
+- [x] Create datastorage with relevant data
+
 
 ##### ❌ To-do 
-- [ ] README aanvullen
-- [ ] Maak een eigen datastore
-- [ ] Verzamel gegevens
-- [ ] Doorzoek deze op patronen
-- [ ] Visualiseer deze d.m.v. D3
-
-
-## Day by day
-
-### Maandag
-Verbonden met de oba-api. Daarna aan de slag gegaan met de code van Rijk
-
-### Dinsdag
-Verder gegaan met de code van Rijk, hoe werkt het en wat doet het?
-Github repository aangemaakt. 
-
-### Woensdag
-Overgestapt naar de code van Dennis, deze proberen te begrijpen en kijken wat de output was.
-Onderzoeksvragen opgesteld en verbeterd.
-
-### Donderdag
-Code uitgebreid, beter kunnen zoeken. Definitieve onderzoeksvraag bepaald en hier deelvragen over  opgesteld.
-
-### Vrijdag
-* Meerde zoekresultaten toegevoegd (met Gijs).
-* Filter verbeterd
+- [ ] Visualize with D3
