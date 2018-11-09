@@ -109,7 +109,7 @@ Compressing the data and creating a .json file
 ```
  
 ### Sketching
-[sketch](sketch_d3.png)
+[sketch]:(sketch_d3.png)
 
 ### Plan of Action
 
