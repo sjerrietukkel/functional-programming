@@ -45,15 +45,10 @@ Understanding the API was difficult especially since the documentation was outda
 ### Research Questions
 
 1. Is the length of book with cats as subject longer for children's books, nature books or fairytales?
-<br>
 2. What are the most populair animals children's literature?
-<br>
 3. What animal is populair in what era?
-<br>
 4. Is there a difference in the animals used in books for different ages?
-<br>
 5. How many times is the name of the animal used in the title?
-<br>
 6. Length of the titles in different times.
 
 
