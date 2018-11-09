@@ -40,7 +40,7 @@ obaApi.getAll('search', {
       title: book.titles[0].title[0]['_'],
       // subject: book.subjects[0].topical-subject[0]
 
-      coverImage: book.coverimages[0].coverimage[0]['_'],
+      // coverImage: book.coverimages[0].coverimage[0]['_'],
       // summary: book.summaries[0].summary[0]
     }
   })

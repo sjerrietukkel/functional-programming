@@ -23,7 +23,7 @@ Create .env file for storing API key:
 touch .env
 
 paste the APIkey in the .env file:
-PUBLIC_KEY={your_API_key}
+PUBLIC_KEY=your_API_key
 
 Start up the nodeJS server:
 node index
