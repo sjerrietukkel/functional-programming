@@ -63,7 +63,7 @@ I think the titlelength with 'cats' will be longer for children's book, because 
 
 ### Code used
 Used code to receive books.
-```
+```ruby
 client.getAll('search',
       {
        q: 'title:kat',
@@ -78,7 +78,8 @@ client.getAll('search',
       })
 ```      
 Compressing the data
-```
+```ruby
+
 .then(response => {
   const data = response.data
   // response ends up here
