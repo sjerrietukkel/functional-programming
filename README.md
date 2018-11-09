@@ -6,6 +6,29 @@
 **[Variabele](#interessante-variabele)**<br>
 **[Stappenplan](#Stappenplan)**<br>
 
+
+## How to install
+
+Request a key from OBA
+
+```
+Clone the repo:
+git clone https://github.com/sjerrietukkel/functional-programming
+
+Install packages:
+npm install
+
+Create .env file for storing API key:
+touch .env
+
+paste the APIkey in the .env file:
+PUBLIC_KEY={your_API_key}
+
+Start up the nodeJS server:
+node index
+```
+
+
 ## Onderzoeksvragen
 
 ### Wat zijn de populairste dieren als personage in dierenboeken?

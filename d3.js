@@ -2,7 +2,7 @@ d3.json('bookdata.json').then(data => {
     console.log(data);
     let dataset = data[0].data
     var margin = {top: 20, right: 30, bottom: 30, left: 40},
-    width = 720 - margin.left - margin.right,
+    width = 1080 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 
@@ -15,8 +15,8 @@ d3.json('bookdata.json').then(data => {
 
     var xAxis = d3.axisBottom(xScale)
                   .scale(xScale);
+                  
 
-    
     var yAxis = d3.axisLeft(yScale)
                   .scale(yScale)    
                   .ticks(10, "%"); 
@@ -30,9 +30,9 @@ d3.json('bookdata.json').then(data => {
                     
     
     chart.append("g")
-                  .attr("class", "x axis")
-                  .attr("transform", "translate(0," + height + ")")
-                  .call(xAxis);   
+                    .attr("class", "x axis")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis);   
                   
     chart.append("g")
                   .attr("class", "y axis")
@@ -47,10 +47,9 @@ d3.json('bookdata.json').then(data => {
                   .attr("y", function(d) { 
                       return yScale(d.coverImage.length); 
                     })
-                  .attr("height", function(d) { return height - yScale(d.value); })
-                  .attr("width", function(d) { return width - xScale(d.value); })
-                //   .attr("width", xScale.bandwidth());
-
+                  .attr("height", function(d) { return height - yScale(d.coverImage.length); })
+                  .attr("width", function(d) { return width - xScale(d.title.length); })
+                //    .attr("width", xScale.bandwidth());
  
     chart.append("g")
         .attr("class", "y axis")
@@ -61,13 +60,6 @@ d3.json('bookdata.json').then(data => {
         .attr("dy", ".71em")
         .style("text-anchor", "end")
         .text("Frequency");   
-        
-
-        function type(d) {
-        d.value = +d.value; // coerce to number
-        return d;
-        }
- 
 })
 
 
