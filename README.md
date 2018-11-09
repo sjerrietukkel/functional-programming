@@ -61,7 +61,21 @@ I think the titlelength with 'cats' will be longer for children's book, because 
 * format 
 * title
 
-
+### Code used
+```
+client.getAll('search',
+      {
+       q: 'title:bloed',
+       librarian: true,
+       refine: true,
+       facet:'type(book)&facet=language(dut)&facet=genre(thriller)'
+      },
+      {
+        page: 1,
+        pagesize: 20,
+        maxpages: 4
+      })
+```      
  
 
 
