@@ -62,7 +62,7 @@ I think the titlelength with 'cats' will be longer for children's book, because 
 * title
 
 ### Code used
-
+Used code to receive books.
 ```
 client.getAll('search',
       {
@@ -77,6 +77,35 @@ client.getAll('search',
         maxpages: 5
       })
 ```      
+Compressing the data
+```
+.then(response => {
+  const data = response.data
+  // response ends up here
+  console.log(response)
+  // lege array waar de opgehaalde data in gepush'd
+  let dataArray = [];
+// Laat van de arrays de geselecteerde objecten zien 
+  
+  const results = data.map(book => {
+    return {
+      title: book.titles[0].title[0]['_'],
+      coverImage: book.coverimages[0].coverimage[0]['_'],
+      summary: book.summaries[0].summary[0]
+    }
+  })
+
+  let total = {
+    url: response.url, 
+    data: results
+  };
+
+  // pushed in de array
+  dataArray.push(total);
+  return dataArray
+  
+})
+```
  
 
 
