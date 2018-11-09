@@ -112,6 +112,11 @@ Compressing the data and creating a .json file
 ### Sketching
 ![sketch](sketch_d3.png)
 
+### Conclusion 
+Man o man, these weeks were exhausting. Connecting with the was a challenge, understanding the api was even worse. Without the help of my classmates i'd probably still trying to connect. 
+<br>
+After working in Observable I concluded it wasn't what I needed, so started following tutorials that in the end only made it more challenging to create what I had envisioned. I choose a not to difficult concept so I could at least show something, and that failed.
+
 ### Plan of Action
 
 ##### ✅ Done
