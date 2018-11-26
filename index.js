@@ -13,7 +13,8 @@ const obaApi = new gissa({
 const search = {
   endpoint: 'search',
   query: {
-      q: 'star wars',
+      q: 'book',
+      facet: 'genre(zeeverhaal)'
       // facet: 'genre(school)',
       facet: 'type(book)',
       refine: true
@@ -36,7 +37,7 @@ const search = {
 
 
 obaApi.getPages(search).then(
-  res => fs.writeFile('data/all.json', JSON.stringify(res.data), 'utf8', () => {
+  res => fs.writeFile('data/test.json', JSON.stringify(res.data), 'utf8', () => {
     console.log('Joe joe, ik heb de file gemaakt.')
   })
 )

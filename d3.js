@@ -1,4 +1,3 @@
-
 d3.json("data/all.json").then(function(data) {
     var bookNested = d3
         .nest()
@@ -18,18 +17,23 @@ d3.json("data/all.json").then(function(data) {
     height = 500 - margin.top - margin.bottom;
 
     var parseTime = d3.timeParse("%Y");
-    var x = d3.scaleTime().range([0, width]);
-    var y = d3.scaleLinear().range([height, 0]);
+    var x = d3.scaleTime().range([0, width])
+    var y = d3.scaleLinear().range([height, 0])
+
+    x.domain([1980, 2018])
+    .tickFormat(d3.timeFormat("%Y"))
+    y.domain([0, 45])
 
     var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .classed("holder", true)
+    // .classed("holder", true)
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
-    x.domain([parseTime(1980), parseTime(2018)]);
-    y.domain([0, 50]);
+
+
+    
 
     // Add the X axis
     svg.append("g")
@@ -55,51 +59,23 @@ d3.json("data/all.json").then(function(data) {
       .style("font-family", "Arial, Helvetica, sans-serif")
       .text("Uitgebrachte boeken");    
 
-    // let Xscale = d3.scaleLinear()
-    //     .range ([0, 700])
-    //     .domain([1980, 2018])
-
-
-    // let Yscale = d3.scaleLinear()
-    //     .range([0, 200])
-    //     .domain([100, 0])    
-        
-    //     // .domain([
-    //     //     d3.max(d, d=> {
-    //     //         return formatNumbers(d)
-    //     //     })
-            
-    //     // ])    
-
-    // let x_Axis = d3
-    //     .axisBottom()
-    //     .scale(Xscale)
-    //     .tickFormat(d3.format("d"));
-
-    // let y_Axis = d3.axisLeft().scale(Yscale)
-
-   
-    // let xAxisGroup = svg
-    //     .append("g")
-    //     .attr("transform", "translate(0, " + 500 + ")")
-    //     .call(x_Axis);
-        
-    // let yAxisGroup = svg
-    //     .append("g")
-    //     .call(y_Axis);        
-
-    // svg.selectAll("line")
-    // .data(data)
-    // .enter()
-    // .append("circle")
-    // .style('fill', 'orange')
-    // .style('opacity', '.3')
-    // .attr("r", 5)
-    // .attr("cx", d => {
-    //     return Xscale(Number(d.key))
-    // })
-    // .attr("cy", d => {
-    //     return Yscale(Number(d.value))
-    // })
+    svg.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("image")
+        .attr("xlink:href", function(d){ return d.src })
+        .attr("cx", d => {
+            return x(Number(d.key))
+        })
+        .attr("cy", d => {
+            return y(Number(d.value))
+        })
+        .attr("width", 16)
+        .attr("height", 16);
+        // .style('background-image', 'url("https://static.thenounproject.com/png/1571948-200.png")')
+        // .style('fill', 'orange')
+        // .style('opacity', '.3')
+        // .attr("r", 5)
+      
 
 })
