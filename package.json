@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@gijslaarman/oba-scraper": "^1.1.1",
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
     "dotenv": "^6.1.0",
@@ -23,5 +24,4 @@
   },
   "author": "",
   "license": "ISC"
-  
 }

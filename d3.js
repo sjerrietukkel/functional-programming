@@ -1,14 +1,24 @@
 d3.json('bookdata.json').then(data => {
-
+    
     let dataset = data[0].data
-    var margin = {top: 20, right: 30, bottom: 30, left: 40},
+    console.log(dataset.title[0])
+    var titles = dataset.map(function (d) {
+        return dataset.title
+    })
+
+    console.log(titles)
+    var margin = {
+        top: 20, 
+        right: 30, 
+        bottom: 30, 
+        left: 40
+    },
     width = 1080 - margin.left - margin.right,
     domain = 10,
     minMax = d3.extent(dataset.map(book => book.title.length)),
     height = 300 - margin.top - margin.bottom;
 
-    var yScale = d3
-        .scaleLinear()
+    var yScale = d3.scaleLinear()
         .domain(minMax)
         .range([0, height])
 
@@ -16,6 +26,7 @@ d3.json('bookdata.json').then(data => {
         .range([height, 0],);
 
    var xBand = d3.scaleBand()
+
 	    .rangeRound([0, width])
 	    .padding(0.1);
 
@@ -36,8 +47,7 @@ d3.json('bookdata.json').then(data => {
     
     chart.append("g")
                     .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")
-                    //.call(xAxis);   
+                    .attr("transform", "translate(0," + height + ")")  
                   
     chart.append("g")
                   .attr("class", "y axis")
@@ -47,21 +57,23 @@ d3.json('bookdata.json').then(data => {
 
     chart.selectAll(".bar")
                   .data(dataset)
-                   .enter().append("rect")
+                 .enter().append("rect")
                   .attr("class", "bar")
                   .attr("x", function(d) {
                     //   console.log(d.title.length)
                       console.log(xBand(d.title) )  
-                      return xScale(d.title.length) 
+                      return 0
                     })
                   .attr("y", function(d) { 
                       return yScale(d.title.length)
                     })
                   .attr("height", function(d) {
-                    return 10
+                    return xBand.bandwidth()
                     //   return height - yScale(d.coverImage.length); 
                 })
-                .attr("width", xBand.bandwidth())
+                .attr("width", function(d) {
+                    return yScale(d.title.length)
+                })
                 //    .attr("width", xScale.bandwidth());
  
     chart.append("g")

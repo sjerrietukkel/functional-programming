@@ -37,10 +37,8 @@ obaApi.getAll('search', {
   const results = data.map(book => {
     return {
       title: book.titles[0].title[0]['_'],
-      // subject: book.subjects[0].topical-subject[0]
-
       coverImage: book.coverimages[0].coverimage[0]['_'],
-      summary: book.summaries[0].summary[0]
+      // summary: book.summaries[0].summary[0]
     }
   })
 
@@ -60,8 +58,8 @@ obaApi.getAll('search', {
   app.get('/', (req, res) => res.json(response))
   app.listen(port, () => console.log(chalk.green(`Listening on port ${port}`)))
 
-  data = JSON.stringify(response, null, 2);
-  fs.writeFileSync('bookdata.json', data);
+  // data = JSON.stringify(response, null, 2);
+  // fs.writeFileSync('bookdata.json', data);
 })
 .catch(err => console.log(err))
 // combined facets -> facet: ["genre(dieren)", "language(dut)"]
