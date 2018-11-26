@@ -13,8 +13,7 @@ const obaApi = new gissa({
 const search = {
   endpoint: 'search',
   query: {
-      q: 'book',
-      facet: 'genre(zeeverhaal)'
+      q: 'star wars',
       // facet: 'genre(school)',
       facet: 'type(book)',
       refine: true
@@ -31,7 +30,7 @@ const search = {
       // publication: `book.publication[0].publishers[0].publisher[0].$.place  book.publication[0].publishers[0] : null`,
       publication: `book.publication && book.publication[0].publishers && book.publication[0].publishers[0].publisher && book.publication[0].publishers[0].publisher[0].$.place ? book.publication[0].publishers[0].publisher[0].$.place : null`,
       // originLang: `book.languages && book.languages[0] && book.languages[0]['original-language'] ? book.languages[0]['original-language'][0]['_'] : null`,
-      title: `book.titles[0].title[0]['_']`
+      title: `book.titles[0].title[0]['_']`,
   }
 }
 

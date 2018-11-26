@@ -57,7 +57,9 @@ d3.json("data/all.json").then(function(data) {
       .attr("dy", "1.5em")
       .style("text-anchor", "middle")
       .style("font-family", "Arial, Helvetica, sans-serif")
-      .text("Uitgebrachte boeken");    
+      .text("Uitgebrachte boeken"); 
+      
+      
 
     svg.selectAll("circle")
         .data(data)
