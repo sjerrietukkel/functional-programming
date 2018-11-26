@@ -1,96 +1,105 @@
-d3.json('bookdata.json').then(data => {
-    
-    let dataset = data[0].data
-    console.log(dataset.title[0])
-    var titles = dataset.map(function (d) {
-        return dataset.title
-    })
 
-    console.log(titles)
-    var margin = {
-        top: 20, 
-        right: 30, 
-        bottom: 30, 
-        left: 40
-    },
-    width = 1080 - margin.left - margin.right,
-    domain = 10,
-    minMax = d3.extent(dataset.map(book => book.title.length)),
-    height = 300 - margin.top - margin.bottom;
-
-    var yScale = d3.scaleLinear()
-        .domain(minMax)
-        .range([0, height])
-
-    var xScale = d3.scaleLinear()
-        .range([height, 0],);
-
-   var xBand = d3.scaleBand()
-
-	    .rangeRound([0, width])
-	    .padding(0.1);
-
-
-        console.log(minMax);
-
-
-    var yAxis = d3.axisLeft(yScale)
-                  .scale(yScale)    
-                                          
-    
-    var chart = d3.select(".chart")
-                    .attr("width", width + margin.left + margin.right)
-                    .attr("height", height + margin.top + margin.bottom)
-                    .append("g")
-                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");     
-                    
-    
-    chart.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")  
-                  
-    chart.append("g")
-                  .attr("class", "y axis")
-                  .call(yAxis);
-
-
-
-    chart.selectAll(".bar")
-                  .data(dataset)
-                 .enter().append("rect")
-                  .attr("class", "bar")
-                  .attr("x", function(d) {
-                    //   console.log(d.title.length)
-                      console.log(xBand(d.title) )  
-                      return 0
-                    })
-                  .attr("y", function(d) { 
-                      return yScale(d.title.length)
-                    })
-                  .attr("height", function(d) {
-                    return xBand.bandwidth()
-                    //   return height - yScale(d.coverImage.length); 
-                })
-                .attr("width", function(d) {
-                    return yScale(d.title.length)
-                })
-                //    .attr("width", xScale.bandwidth());
- 
-    chart.append("g")
-                .attr("class", "y axis")
-                .call(yAxis)
-                    .append("text")
-                .attr("transform", "rotate(-90)")
-                .attr("y", 6)
-                .attr("dy", ".71em")
-                .style("text-anchor", "end")
-                .text("Frequency");   
+d3.json("data/all.json").then(function(data) {
+    var bookNested = d3
+        .nest()
+        .key(data => data.pubYear)
+        // .key(data => data.publication)
+        .rollup(function(data) {
+            return data.length
+        })
+        .entries(data) 
+        return bookNested  
 })
 
+.then(data => {
+    console.log(data)
+    var margin = {top: 20, right: 20, bottom: 60, left: 60},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+    var parseTime = d3.timeParse("%Y");
+    var x = d3.scaleTime().range([0, width]);
+    var y = d3.scaleLinear().range([height, 0]);
+
+    var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .classed("holder", true)
+    .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+    x.domain([parseTime(1980), parseTime(2018)]);
+    y.domain([0, 50]);
+
+    // Add the X axis
+    svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+    svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .style("font-family", "Arial, Helvetica, sans-serif")
+      .text("Jaartal");
+
+    // Add the Y Axis
+    svg.append("g")
+        .call(d3.axisLeft(y));
+        svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1.5em")
+      .style("text-anchor", "middle")
+      .style("font-family", "Arial, Helvetica, sans-serif")
+      .text("Uitgebrachte boeken");    
+
+    // let Xscale = d3.scaleLinear()
+    //     .range ([0, 700])
+    //     .domain([1980, 2018])
 
 
+    // let Yscale = d3.scaleLinear()
+    //     .range([0, 200])
+    //     .domain([100, 0])    
+        
+    //     // .domain([
+    //     //     d3.max(d, d=> {
+    //     //         return formatNumbers(d)
+    //     //     })
+            
+    //     // ])    
 
+    // let x_Axis = d3
+    //     .axisBottom()
+    //     .scale(Xscale)
+    //     .tickFormat(d3.format("d"));
 
-.catch(err => {
-    console.log(err);
+    // let y_Axis = d3.axisLeft().scale(Yscale)
+
+   
+    // let xAxisGroup = svg
+    //     .append("g")
+    //     .attr("transform", "translate(0, " + 500 + ")")
+    //     .call(x_Axis);
+        
+    // let yAxisGroup = svg
+    //     .append("g")
+    //     .call(y_Axis);        
+
+    // svg.selectAll("line")
+    // .data(data)
+    // .enter()
+    // .append("circle")
+    // .style('fill', 'orange')
+    // .style('opacity', '.3')
+    // .attr("r", 5)
+    // .attr("cx", d => {
+    //     return Xscale(Number(d.key))
+    // })
+    // .attr("cy", d => {
+    //     return Yscale(Number(d.value))
+    // })
+
 })

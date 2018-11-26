@@ -13,14 +13,15 @@ const obaApi = new gissa({
 const search = {
   endpoint: 'search',
   query: {
-      q: 'book',
-      facet: 'genre(dieren)',
+      q: 'star wars',
+      // facet: 'genre(school)',
+      facet: 'type(book)',
       refine: true
   },
   pages: {
       page: 1,
       pagesize: 20,
-      maxpages: 1000
+      maxpages: 12
   },
   filter: {
       pubYear: `book.publication && book.publication[0].year && book.publication[0].year[0]['_'] ? book.publication[0].year[0]['_'] : null`,
