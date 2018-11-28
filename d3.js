@@ -16,12 +16,15 @@ d3.json("data/all.json").then(function(data) {
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
+    var format = d3.format(".1f")
     var parseTime = d3.timeParse("%Y");
-    var x = d3.scaleTime().range([0, width])
+    var x = d3.scaleLinear().range([0, width])
     var y = d3.scaleLinear().range([height, 0])
 
-    x.domain([1980, 2018])
-    .tickFormat(d3.timeFormat("%Y"))
+
+    x.domain([1977, 2018])
+
+    // .tickFormat(d3.timeFormat("%Y"))
     y.domain([0, 45])
 
     var svg = d3.select("#chart").append("svg")
@@ -64,19 +67,19 @@ d3.json("data/all.json").then(function(data) {
     svg.selectAll("circle")
         .data(data)
         .enter()
-        .append("image")
-        .attr("xlink:href", function(d){ return d.src })
-        .attr("cx", d => {
+        .append("line")
+        // .attr("xlink:href", function(d){ return d.src })
+        .attr("x", d => {
             return x(Number(d.key))
         })
-        .attr("cy", d => {
+        .attr("y", d => {
             return y(Number(d.value))
         })
         .attr("width", 16)
-        .attr("height", 16);
+        .attr("height", 16)
         // .style('background-image', 'url("https://static.thenounproject.com/png/1571948-200.png")')
         // .style('fill', 'orange')
-        // .style('opacity', '.3')
+        .style('opacity', '.8')
         // .attr("r", 5)
       
 
