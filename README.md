@@ -135,6 +135,8 @@ After working in Observable I concluded it wasn't what I needed, so started foll
 ##### ❌ To-do 
 - [ ] Add neon lights to lightsaber
 - [ ] Add tooltip to give to user more information.
+- [ ] Multiple promises
+- [ ] Fix issue on X-axis 
 
 #### Credits
 * Daniel van de Velde (Readme)

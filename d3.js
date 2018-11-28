@@ -1,43 +1,33 @@
-// import { csv, json } from 'd3-fetch'
-
 var movies = [{
     "year": "1977",
-    "value": 50,
     "text": "ep IV"
   },
   {
     "year": "1980",
-    "value": 50,
     "text": "ep V"
   },
   {
     "year": "1983",
-    "value": 50,
     "text": "ep VI"
   },
   {
       "year" : "1999",
-      "value": 50,
       "text": "ep I"
   },
   {
     "year": "2002",
-    "value": 50,
     "text": "ep II"
   },
   {
     "year": "2005",
-    "value": 50,
     "text": "ep III"
   },
   {
     "year": "2015",
-    "value": 50,
     "text": "ep VII"
   },
   {
     "year": "2017",
-    "value": 50,
     "text": "ep VIII"
   }
 ];
@@ -60,6 +50,7 @@ d3.json("data/all.json").then(function(data) {
 
         var x = d3.scaleLinear().range([0, width])
         var y = d3.scaleLinear().range([height, 0])
+        var yMax = 50
     
         x.domain([1975, 2018])
         y.domain([0, 50])
@@ -106,8 +97,8 @@ d3.json("data/all.json").then(function(data) {
               .attr("x", function(d) { return x(d.year) })
               .attr("width", 2)
               .attr("opacity", "1")
-              .attr("y", function(d) { return y(d.value) })
-              .attr("height", function(d) { return height - y(d.value); })
+              .attr("y", function(d) { return y(yMax) })
+              .attr("height", function(d) { return height - y(yMax); })
               
           
           bars.append("text")
