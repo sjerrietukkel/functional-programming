@@ -1,3 +1,5 @@
+// import { csv, json } from 'd3-fetch'
+
 var movies = [{
     "year": "1977",
     "value": 50,
@@ -41,6 +43,7 @@ var movies = [{
 ];
 
 
+
 d3.json("data/all.json").then(function(data) {
     var bookNested = d3
         .nest()
@@ -54,7 +57,7 @@ d3.json("data/all.json").then(function(data) {
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
     
-        var parseTime = d3.timeParse("%Y");
+
         var x = d3.scaleLinear().range([0, width])
         var y = d3.scaleLinear().range([height, 0])
     
@@ -140,9 +143,8 @@ d3.json("data/all.json").then(function(data) {
 })
 
 
-// .then(data => {
-//     console.log(data)
-
+// d3.json("data/movies.json").then(data => {
+   
 
 // })
 
