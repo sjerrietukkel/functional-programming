@@ -105,6 +105,7 @@ d3.json("data/all.json").then(function(data) {
       
       bars.append("rect")
           .style("fill", "#2FF923")
+          .attr("class", "rect")
           .attr("x", function(d) { return x(d.year) })
           .attr("width", 2)
           .attr("opacity", "1")
@@ -125,7 +126,7 @@ d3.json("data/all.json").then(function(data) {
             .attr("width", "40")
             .attr("height", "40")
             .attr("x", function(d) { return x(d.year)-18 }) // -14 to center the img to the line
-            .attr("y", function(d) { return y(4) })
+            .attr("y", function(d) { return y(4) }) 
 
     svg.selectAll("circle")
         .data(data)
@@ -139,7 +140,7 @@ d3.json("data/all.json").then(function(data) {
         })
         .attr("width", 16)
         .attr("height", 16)
-        .style('fill', 'orange')
+        .style('fill', 'red')
         .style('opacity', '1')
         .attr("r", 5)
 
