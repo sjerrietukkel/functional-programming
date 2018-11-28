@@ -53,8 +53,8 @@ d3.json("data/all.json").then(function(data) {
         return bookNested  
 })
 
+
 .then(data => {
-    console.log(data)
     var margin = {top: 20, right: 20, bottom: 60, left: 60},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;

@@ -41,7 +41,7 @@ node index
 * Xml2js
 
 #### Oba API
-Understanding the API was difficult especially since the documentation was outdated and was very vague Daniel van de Velde helped me alot with the documentation he wrote. 
+Understanding the API was difficult especially since the documentation was outdated and was very vague. Daniel van de Velde helped me alot with the documentation he wrote. Gijs Laarman created an excellent scraper which I used for the resit. My original code is explained below. 
 
 ### Research Questions
 
@@ -51,20 +51,21 @@ Understanding the API was difficult especially since the documentation was outda
 4. Is there a difference in the animals used in books for different ages?
 5. How many times is the name of the animal used in the title?
 6. Length of the titles in different times.
+7. **Are there more Star Wars books published after Disney bought LucasArts (in 2012)**
 
 
 ### Hypotheses
-I think the titlelength with 'cats' will be longer for children's book, because they tend to give an impression of the book with a combination of the title and coverimage that has to speak to the imagination of a child.
+I think Disney used books as marketing material in stead of using it to improve on the Star Wars universe, therefore there must be more books published leading up to the sequel movies (Episode VII & VII). 
 
 #### Parameters needed
 
-* genre
-* format 
-* title
+* Publication Year (pubYear)
+* format (Books)
+* Release dates of Star Wars movies
 
 ### Code used
 Used code to receive books.
-```ruby
+```js
 client.getAll('search',
       {
        q: 'title:kat',
@@ -79,7 +80,7 @@ client.getAll('search',
       })
 ```      
 Compressing the data and creating a .json file
-```ruby
+```js
 
 .then(response => {
   const data = response.data
@@ -127,12 +128,14 @@ After working in Observable I concluded it wasn't what I needed, so started foll
 - [x] Create sub-questions
 - [x] Think about visualisation
 - [x] Create datastorage with relevant data
+- [x] Visualize with D3
 
 
 ##### ❌ To-do 
-- [ ] Visualize with D3
+- [ ] Add neon lights to lightsaber
+- [ ] Add tooltip to give to user more information.
 
 #### Credits
-* Dennis Wegereef
-* Daniel van de Velde
+* Daniel van de Velde (Readme)
 * Gijs Laarman
+* Marcel Fleuren
