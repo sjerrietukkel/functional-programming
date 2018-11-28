@@ -1,5 +1,5 @@
 # Functional-Programming
-![Final Product](final_product.png)
+![Final Product](images/final_product.png)
 
 ## Index
 
