@@ -120,8 +120,12 @@ d3.json("data/all.json").then(function(data) {
           .style("font-family", "Arial, Helvetica, sans-serif")
           .style("font-size", "12px")
       
-        bars.append("svg:image")
-        .attr("xlink:href", "../fp-backup/images/saber.png")
+    bars.append("svg:image")
+            .attr("xlink:href", "../images/saber.png")
+            .attr("width", "30")
+            .attr("height", "30")
+            .attr("x", function(d) { return x(d.year) })
+            .attr("y", function(d) { return y(3) })
 
     svg.selectAll("circle")
         .data(data)
