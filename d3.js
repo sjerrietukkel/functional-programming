@@ -150,7 +150,11 @@ d3.json("data/all.json").then(function(data) {
         .style("fill", "white")
         .attr("x", function(d) { return x(d.year); })
         .attr("width", 1)
+        .attr("opacity", ".3")
         .attr("y", function(d) { return y(d.value); })
-        .attr("height", function(d) { return height - y(d.value); });
-        
+        .attr("height", function(d) { return height - y(d.value); })
+        .text(function(d) { 
+            return d.text; 
+        }); 
+
 })
