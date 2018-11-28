@@ -1,3 +1,15 @@
+var annotations = [{
+    "year": "1977",
+    "value": 50,
+    "text": "Star Wars first Releases"
+  },
+  {
+      "year" : 1997,
+      "value": 0,
+      "text": "Part 1 Released"
+  }];
+
+
 d3.json("data/all.json").then(function(data) {
     var bookNested = d3
         .nest()
@@ -16,16 +28,12 @@ d3.json("data/all.json").then(function(data) {
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-    var format = d3.format(".1f")
     var parseTime = d3.timeParse("%Y");
     var x = d3.scaleLinear().range([0, width])
     var y = d3.scaleLinear().range([height, 0])
 
-
-    x.domain([1977, 2018])
-
-    // .tickFormat(d3.timeFormat("%Y"))
-    y.domain([0, 45])
+    x.domain([1975, 2018])
+    y.domain([0, 50])
 
     var svg = d3.select("#chart").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -34,9 +42,6 @@ d3.json("data/all.json").then(function(data) {
     // .classed("holder", true)
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
-
-
-    
 
     // Add the X axis
     svg.append("g")
@@ -60,27 +65,40 @@ d3.json("data/all.json").then(function(data) {
       .attr("dy", "1.5em")
       .style("text-anchor", "middle")
       .style("font-family", "Arial, Helvetica, sans-serif")
-      .text("Uitgebrachte boeken"); 
+      .text("Uitgebrachte boeken");
       
-      
-
     svg.selectAll("circle")
         .data(data)
         .enter()
-        .append("line")
-        // .attr("xlink:href", function(d){ return d.src })
-        .attr("x", d => {
+        .append("circle")
+        .attr("cx", d => {
             return x(Number(d.key))
         })
-        .attr("y", d => {
+        .attr("cy", d => {
             return y(Number(d.value))
         })
         .attr("width", 16)
         .attr("height", 16)
-        // .style('background-image', 'url("https://static.thenounproject.com/png/1571948-200.png")')
-        // .style('fill', 'orange')
-        .style('opacity', '.8')
-        // .attr("r", 5)
+        .style('fill', 'orange')
+        .style('opacity', '.9')
+        .attr("r", 5)
       
-
+    svg.selectAll("annotations")
+        .data(annotations)
+        .enter()
+        .append("circle")
+        .attr("cx", d => {
+            console.log(d.year)
+            return x(d.year)
+        })
+        .attr("cy", d => {
+            console.log(d.value)
+            return y(d.value)
+        })
+        .attr("width", 16)
+        .attr("height", 16)
+        .style('fill', 'white')
+        .style('opacity', '.9')
+        .attr("r", 5)
+        .append(d.text)
 })
