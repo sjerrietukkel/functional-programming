@@ -15,27 +15,22 @@
   },
   {
       "year" : "1999",
-      "value": 50,
       "text": "ep I"
   },
   {
     "year": "2002",
-    "value": 50,
     "text": "ep II"
   },
   {
     "year": "2005",
-    "value": 50,
     "text": "ep III"
   },
   {
     "year": "2015",
-    "value": 50,
     "text": "ep VII"
   },
   {
     "year": "2017",
-    "value": 50,
     "text": "ep VIII"
   }
 ]
