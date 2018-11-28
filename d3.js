@@ -111,7 +111,7 @@ d3.json("data/all.json").then(function(data) {
         .attr("width", 16)
         .attr("height", 16)
         .style('fill', 'orange')
-        .style('opacity', '.9')
+        .style('opacity', '1')
         .attr("r", 5)
 
         // var line = d3.line()
