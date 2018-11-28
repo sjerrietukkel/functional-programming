@@ -106,7 +106,7 @@ d3.json("data/all.json").then(function(data) {
       bars.append("rect")
           .style("fill", "#2FF923")
           .attr("x", function(d) { return x(d.year) })
-          .attr("width", 1)
+          .attr("width", 2)
           .attr("opacity", "1")
           .attr("y", function(d) { return y(d.value) })
           .attr("height", function(d) { return height - y(d.value); })
@@ -122,10 +122,10 @@ d3.json("data/all.json").then(function(data) {
       
     bars.append("svg:image")
             .attr("xlink:href", "../images/saber.png")
-            .attr("width", "30")
-            .attr("height", "30")
-            .attr("x", function(d) { return x(d.year) })
-            .attr("y", function(d) { return y(3) })
+            .attr("width", "40")
+            .attr("height", "40")
+            .attr("x", function(d) { return x(d.year)-18 }) // -14 to center the img to the line
+            .attr("y", function(d) { return y(4) })
 
     svg.selectAll("circle")
         .data(data)
