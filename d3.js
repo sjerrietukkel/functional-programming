@@ -1,13 +1,44 @@
 var annotations = [{
-    "year": "1977",
+    "year": "1977-1983",
     "value": 50,
-    "text": "Star Wars first Releases"
+    "text": "A New Hope"
   },
   {
-      "year" : 1997,
-      "value": 0,
-      "text": "Part 1 Released"
-  }];
+    "year": "1980",
+    "value": 50,
+    "text": "The Empire Strikes Back"
+  },
+  {
+    "year": "1983",
+    "value": 50,
+    "text": "Return Of The Jedi"
+  },
+  {
+      "year" : "1999",
+      "value": 50,
+      "text": "The Phantom Menace"
+  },
+  {
+    "year": "2002",
+    "value": 50,
+    "text": "Attack Of The Clones"
+  },
+  {
+    "year": "2005",
+    "value": 50,
+    "text": "Revenche of the Sith"
+  },
+  {
+    "year": "2015",
+    "value": 50,
+    "text": "The Force Awakens"
+  },
+  {
+    "year": "2017",
+    "value": 50,
+    "text": "The Last Jedi"
+  }
+];
 
 
 d3.json("data/all.json").then(function(data) {
@@ -32,7 +63,7 @@ d3.json("data/all.json").then(function(data) {
     var x = d3.scaleLinear().range([0, width])
     var y = d3.scaleLinear().range([height, 0])
 
-    x.domain([1975, 2018])
+    x.domain([1977, 2018])
     y.domain([0, 50])
 
     var svg = d3.select("#chart").append("svg")
@@ -82,23 +113,44 @@ d3.json("data/all.json").then(function(data) {
         .style('fill', 'orange')
         .style('opacity', '.9')
         .attr("r", 5)
+
+        // var line = d3.line()
+        //     .x(function(d){ return d.year; })
+        //     .y(function(d){ return d.value; })
+
+        //     console.log(line)
+        // var path = svg.append('path')
+        //     .datum(annotations)
+        //     .attr('d', line)
+        //     .attr('stroke', 'green')
+        //     .attr('stroke-width', 3)
+        //     .attr('fill', 'white');    
       
+    // svg.selectAll("annotations")
+    //     .data(annotations)
+    //     .enter()
+    //     .append("circle")
+    //     .attr("cx", d => {
+    //         console.log(d.year)
+    //         return x(d.year)
+    //     })
+    //     .attr("cy", d => {
+    //         console.log(d.value)
+    //         return y(d.value)
+    //     })
+    //     .attr("width", 16)
+    //     .attr("height", 16)
+    //     .style('fill', 'white')
+    //     .style('opacity', '.9')
+    //     .attr("r", 5)
+
     svg.selectAll("annotations")
         .data(annotations)
-        .enter()
-        .append("circle")
-        .attr("cx", d => {
-            console.log(d.year)
-            return x(d.year)
-        })
-        .attr("cy", d => {
-            console.log(d.value)
-            return y(d.value)
-        })
-        .attr("width", 16)
-        .attr("height", 16)
-        .style('fill', 'white')
-        .style('opacity', '.9')
-        .attr("r", 5)
-        .append(d.text)
+    .enter().append("rect")
+        .style("fill", "white")
+        .attr("x", function(d) { return x(d.year); })
+        .attr("width", 1)
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); });
+        
 })
