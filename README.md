@@ -160,6 +160,6 @@ I got the hang of D3, and while it isn't always clear what you have to do or how
 - [ ] Fix issue on X-axis 
 
 #### Credits
-* Daniel van de Velde (Readme)
-* Gijs Laarman (Geweldige Gissa Scraper)
-* Marcel Fleuren
+* [@Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md) Aquabrowser Documentation <br>
+* [@Gijslaarman](https://github.com/gijslaarman/) Gissa Scraper <br>
+* [@TechDemo]Marcel Fleuren 
