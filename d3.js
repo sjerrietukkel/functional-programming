@@ -113,7 +113,7 @@ d3.json("data/all.json").then(function(data) {
                 .attr("xlink:href", "../images/saber.png")
                 .attr("width", "40")
                 .attr("height", "40")
-                .attr("x", function(d) { return x(d.year)-18 }) // -14 to center the img to the line
+                .attr("x", function(d) { return x(d.year)-18 }) // -18 to center the img to the line
                 .attr("y", function(d) { return y(4) }) 
     
         svg.selectAll("circle")
