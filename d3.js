@@ -104,7 +104,7 @@ d3.json("data/all.json").then(function(data) {
           bars.append("text")
               .text(function(d) { return d.text })
               .attr("x", function(d) { return x(d.year); })
-              .attr("y", function(d) { return y(d.value); })
+            //   .attr("y", function(d) { return y(d.value); })
               .style("text-anchor", "middle")
               .style("font-family", "Arial, Helvetica, sans-serif")
               .style("font-size", "12px")
