@@ -69,8 +69,7 @@ I think Disney used books as marketing material in stead of using it to improve 
 Understanding the API was difficult especially since the documentation was outdated and was very vague. Daniel van de Velde helped me alot with the documentation he wrote. Gijs Laarman created an excellent scraper which I used for the resit. My original code is explained below. 
 
 
-
-####Used code to receive books.
+#### Used code to receive books.
 ```js
 client.getAll('search',
       {
@@ -136,7 +135,6 @@ This returned the data as an array with the following objects for each year some
 
 ### Conclusion 
 Understanding the API was a challenge, it had a lot of restrictions and a lot of the data it returned was dirty as hell.I am however proud of my end result. The first time I lost a lot of time coming up with a solid concept (which I threw away for the resit) and expierenced a lot of difficulities regarding the data. This time around it went a lot smoother thanks to the Gissa scraper and a more executable concept. 
-<br>
 I got the hang of D3, and while it isn't always clear what you have to do or how (looking at you Observable) I did enjoy it alot and want to continue learning it. 
 
 ### Plan of Action
