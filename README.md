@@ -52,7 +52,7 @@ Understanding the API was difficult especially since the documentation was outda
 4. Is there a difference in the animals used in books for different ages?
 5. How many times is the name of the animal used in the title?
 6. Length of the titles in different times.
-7. **Are there more Star Wars books published after Disney bought LucasArts (in 2012)**
+7. **How big is the difference in Star Wars books published after Disney bought LucasArts (in 2012)**
 
 
 ### Hypotheses
@@ -112,7 +112,7 @@ Compressing the data and creating a .json file
 ```
  
 ### Sketching
-![sketch](sketch_d3.png)
+![sketch](images/sketch_d3.png)
 
 ### Conclusion 
 Man o man, these weeks were exhausting. Connecting with the was a challenge, understanding the api was even worse. Without the help of my classmates i'd probably still trying to connect. 
@@ -140,5 +140,5 @@ After working in Observable I concluded it wasn't what I needed, so started foll
 
 #### Credits
 * Daniel van de Velde (Readme)
-* Gijs Laarman
+* Gijs Laarman (Geweldige Gissa Scraper)
 * Marcel Fleuren
