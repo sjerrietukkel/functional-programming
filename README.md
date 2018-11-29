@@ -134,6 +134,7 @@ This returned the data as an array with the following objects for each year some
  
 ### Sketching
 ![sketch](images/sketch_d3.png)
+This what I expected the outcome would look like
 
 ### Conclusion 
 Understanding the API was a challenge, it had a lot of restrictions and a lot of the data it returned was dirty as hell.I am however proud of my end result. The first time I lost a lot of time coming up with a solid concept (which I threw away for the resit) and expierenced a lot of difficulities regarding the data. This time around it went a lot smoother thanks to the Gissa scraper and a more executable concept. 
