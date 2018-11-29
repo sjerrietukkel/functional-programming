@@ -133,7 +133,7 @@ This returned the data as an array with the following objects for each year some
 ```
  
 ### Sketching
-![sketch](images/sketch_d3.png)
+![sketch](images/sketch_d3.png)    
 This what I expected the outcome would look like
 
 ### Conclusion 
