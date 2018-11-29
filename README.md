@@ -115,9 +115,9 @@ Compressing the data and creating a .json file
 ![sketch](images/sketch_d3.png)
 
 ### Conclusion 
-Man o man, these weeks were exhausting. Connecting with the was a challenge, understanding the api was even worse. Without the help of my classmates i'd probably still trying to connect. 
+Understanding the API was a challenge, it had a lot of restrictions and a lot of the data it returned was dirty as hell.I am however proud of my end result. The first time I lost a lot of time coming up with a solid concept (which I threw away for the resit) and expierenced a lot of difficulities regarding the data. This time around it went a lot smoother thanks to the Gissa scraper and a more executable concept. 
 <br>
-After working in Observable I concluded it wasn't what I needed, so started following tutorials that in the end only made it more challenging to create what I had envisioned. I choose a not to difficult concept so I could at least show something, and that failed.
+I got the hang of D3, and while it isn't always clear what you have to do or how (looking at you Observable) I did enjoy it alot and want to continue learning it. 
 
 ### Plan of Action
 
