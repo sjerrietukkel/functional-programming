@@ -42,9 +42,6 @@ node index
 * Xml2js
 * Oba-Scraper
 
-#### Oba API
-Understanding the API was difficult especially since the documentation was outdated and was very vague. Daniel van de Velde helped me alot with the documentation he wrote. Gijs Laarman created an excellent scraper which I used for the resit. My original code is explained below. 
-
 ### Research Questions
 
 1. Is the length of book with cats as subject longer for children's books, nature books or fairytales?
@@ -54,6 +51,7 @@ Understanding the API was difficult especially since the documentation was outda
 5. How many times is the name of the animal used in the title?
 6. Length of the titles in different times.
 7. **How big is the difference in Star Wars books published after Disney bought LucasArts (in 2012)**
+
 
 
 ### Hypotheses
@@ -66,6 +64,12 @@ I think Disney used books as marketing material in stead of using it to improve 
 * Release dates of Star Wars movies
 
 ### Code used
+
+#### Oba API
+Understanding the API was difficult especially since the documentation was outdated and was very vague. Daniel van de Velde helped me alot with the documentation he wrote. Gijs Laarman created an excellent scraper which I used for the resit. My original code is explained below. 
+
+
+
 Used code to receive books.
 ```js
 client.getAll('search',
