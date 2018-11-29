@@ -17,8 +17,8 @@ Request a key from OBA
 Clone the repo:
 git clone https://github.com/sjerrietukkel/functional-programming
 
-Install packages:
-npm install
+Install OBA-scraper:
+npm i @gijslaarman/oba-scraper
 
 Create .env file for storing API key:
 touch .env
@@ -40,6 +40,7 @@ node index
 * Query-string
 * Xml-to-json-promise
 * Xml2js
+* Oba-Scraper
 
 #### Oba API
 Understanding the API was difficult especially since the documentation was outdated and was very vague. Daniel van de Velde helped me alot with the documentation he wrote. Gijs Laarman created an excellent scraper which I used for the resit. My original code is explained below. 
@@ -109,6 +110,22 @@ Compressing the data and creating a .json file
   return dataArray
   
 })
+```
+
+#### Data nesting 
+
+```js
+  var bookNested = d3
+          .nest()
+          .key(data => data.pubYear)
+          .rollup(function(data) {
+              return data.length
+          })
+          .entries(data) 
+```
+This returned the data as an array with the following objects for each year something was published
+```js
+{key: "2010", value: 2}
 ```
  
 ### Sketching
