@@ -30,8 +30,7 @@ var movies = [{
     "year": "2017",
     "text": "ep VIII"
   }
-];
-
+]
 
 
 d3.json("data/all.json").then(function(data) {
