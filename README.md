@@ -70,14 +70,13 @@ Understanding the API was difficult especially since the documentation was outda
 
 
 
-Used code to receive books.
+####Used code to receive books.
 ```js
 client.getAll('search',
       {
-       q: 'title:kat',
-       librarian: true,
-       refine: true,
-       facet:'type(book)&facet=genre(sprookjes)'
+      q: 'star wars',
+      facet: 'type(book)',
+      refine: true
       },
       {
         page: 1,
