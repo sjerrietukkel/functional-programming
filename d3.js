@@ -110,7 +110,7 @@ d3.json("data/all.json").then(function(data) {
               .style("font-size", "12px")
           
         bars.append("svg:image")
-                .attr("xlink:href", "../images/saber.png")
+                .attr("xlink:href", "images/saber.png")
                 .attr("width", "40")
                 .attr("height", "40")
                 .attr("x", function(d) { return x(d.year)-18 }) // -18 to center the img to the line
@@ -132,10 +132,3 @@ d3.json("data/all.json").then(function(data) {
             .style('opacity', '1')
             .attr("r", 5)
 })
-
-
-// d3.json("data/movies.json").then(data => {
-   
-
-// })
-
