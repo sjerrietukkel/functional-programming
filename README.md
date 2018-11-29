@@ -7,6 +7,8 @@
 **[Research Questions](#Research-questions)**<br>
 **[Code](#code-used)**<br>
 **[Plan of Action](#plan-of-action)**<br>
+**[Conclusion](#conclusion)**<br>
+**[Credits](#credits)**<br>
 
 
 ### How to install
